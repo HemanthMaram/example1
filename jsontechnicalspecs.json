@@ -1,0 +1,78 @@
+https://docs.google.com/document/d/14J5-zcQjXSNunyUqrXZz50skGX_XxB3IE0b_ilK-Pw4/edit#
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+ var car_TechnicalSpecifications=[{
+     Dimensions :[{
+         OverallLength_inmm : 3500,
+         OverallWidth_inmm  : 1600,
+         OverallHeight_inmm : 1490,
+         wheelBase : 2360,
+         TrackWidth :[
+             {
+                 front_inmm:1405,
+                 rear_inmm :1400
+             }],
+             
+        minimumturningradius_inm :4.5,
+        minimumgroundclearence_inm :170,     
+         
+         
+     }],
+     capacities :[{
+         SeatingCapacity_inpersons :5,
+         fueltankcapacity_inliters :35
+         
+     }],
+     Engine:[{
+         Type:"KB Series",
+         Numberofcylinders :3,
+         Numberofvalves:12,
+         capacity:998,
+         borextxstroke:"73.0*79.5",
+         compressionratio:"10:1",
+         Maximumpower:"67/6,200",
+         Maximumtorque:"90/3500",
+         fueldistribution:"Multipoint Injection"
+     }],
+     Transmission:[{
+         Type:"5 Speed MT"
+     }],
+     Chasis:[{
+         
+         Steering:"Rack&Pinon ,Power assisted",
+         Brakes:[{
+             Front:"Ventilated Disc",
+             Rear:"Drums"
+         }],
+         Suspension:[{
+             Front:"Macpherson strut & coil spring",
+             Rear:"Isolated trailing link & coil spring"
+         }],
+         shockabsorbers:"Gas Filled",
+         Tyres:  "155/8or13",
+        
+     }],
+     Weights:[{
+         KerbWeight:"860-880",
+         GrossVehicleWeight:1320
+         
+     }]
+     
+ }];
+         
+    
+ 
+});
